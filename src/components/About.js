@@ -32,9 +32,9 @@ const About = () => {
             attention to detail. I'm excited to connect with fellow enthusiasts,
             computer programers and software engineers to collaborate on new
             ventures, and continue pushing the boundaries of what's possible.
-            Feel free to reach out to me at akuyiba8@gmail.com or connect
-            through the Social Media Links provided and let's discuss how we can
-            work together to make digital magic happen.
+            Feel free to connect and reach out to me through the Social Media
+            Links provided and let's discuss how we can work together to make
+            digital magic happen.
           </p>
         </div>
       </div>
