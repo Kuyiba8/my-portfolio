@@ -42,13 +42,13 @@ const Portfolio = () => {
                 alt=""
               />
               <div className="flex justify-center items-center">
-                <button className="w-1/2 px-2 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-2 py-3 m-2 duration-200 hover:scale-105">
                   HTML, CSS
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-2 py-3 m-2 duration-200 hover:scale-105">
                   AND
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-2 py-3 m-2 duration-200 hover:scale-105">
                   JAVASCRIPT
                 </button>
               </div>
