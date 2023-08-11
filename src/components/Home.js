@@ -5,14 +5,16 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="h-full w-full ">
+    <div name="home" className="h-full pt-20 w-full ">
       <div className="w-screen mx-auto flex flex-col items-center justify-evenly h-full px-4 sm:flex-row">
-        <div className="flex flex-col justify-center h-full ">
-          <h2 className="text-3xl sm:text-5xl font-bold">my name is kuyiba</h2>
-          <p className="py-4 w-96">
-            i am a pharmacy technician at ashanti mampong government hospital i
-            enjoy faming very much i am also interestedd in programing i have
-            learn more than four programing languages
+        <div className="flex flex-col justify-center ">
+          <h2 className="text-3xl sm:text-5xl font-bold">
+            I'm a Full Stack Developer
+          </h2>
+          <p className="text-xl py-4 w-96">
+            I have one year of experience building and designing software.
+            Currently, i love to work on web applcation using technologies like
+            React, Tailwindcss and Next JS.
           </p>
           <div className="ml-4">
             <Link

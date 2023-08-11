@@ -1,10 +1,19 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill, BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   const links = [
+    {
+      id: 4,
+      child: (
+        <>
+          facebook <BsFacebook size={30} />
+        </>
+      ),
+      href: "https://web.facebook.com/kuyiba.anthony.5",
+    },
     {
       id: 1,
       child: (
@@ -39,7 +48,7 @@ const Footer = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
+      href: "/kuyiba-resume-1.pdf",
       dowmload: true,
     },
   ];

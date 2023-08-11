@@ -29,15 +29,15 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between  bg-green-400 h-20 items-center fixed w-full ">
+    <div className="flex justify-between  bg-blue-600 h-20 items-center fixed w-full ">
       <div className="text-5xl mx-3">KUYIBA</div>
       <ul className="hidden sm:flex">
         {links.map(({ id, link }) => (
           <li
-            className="px-2 cursor-pointer duration-100 hover:scale-105 capitalize"
+            className="px-2 cursor-pointer border m-2 bg-slate-100 p-2 rounded-2xl duration-100 hover:scale-105 capitalize"
             key={id}
           >
-            <Link to={link} duration={500}>
+            <Link className="text-blue-600" to={link} duration={500}>
               {" "}
               {link}{" "}
             </Link>

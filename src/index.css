@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+html{
+/* font-family: 'Charm',
+        cursive;
+    font-family: 'Playball',
+        cursive; */
+    font-family: 'Quintessential',
+        cursive;
+}
+}
+
+
+

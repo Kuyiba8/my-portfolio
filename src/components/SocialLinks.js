@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill, BsFacebook } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
@@ -12,7 +12,7 @@ const SocialLinks = () => {
           Linkedin <FaLinkedin size={30} />
         </>
       ),
-      href: "http://linkedin.com",
+      href: "https://www.linkedin.com/in/kuyiba-anthony-04b65a1a9/",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const SocialLinks = () => {
           Github <FaGithub size={30} />
         </>
       ),
-      href: "http://github.com",
+      href: "https://github.com/Kuyiba8",
     },
     {
       id: 3,
@@ -30,10 +30,19 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:tony@gmail.com",
+      href: "mailto:akuyiba8@gmail.com",
     },
     {
       id: 4,
+      child: (
+        <>
+          facebook <BsFacebook size={30} />
+        </>
+      ),
+      href: "https://web.facebook.com/kuyiba.anthony.5",
+    },
+    {
+      id: 5,
       child: (
         <>
           Resume <BsFillPersonLinesFill size={30} />
