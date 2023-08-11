@@ -46,9 +46,6 @@ const Portfolio = () => {
                   HTML, CSS
                 </button>
                 <button className="w-1/2 px-2 py-3 m-2 duration-200 hover:scale-105">
-                  AND
-                </button>
-                <button className="w-1/2 px-2 py-3 m-2 duration-200 hover:scale-105">
                   JAVASCRIPT
                 </button>
               </div>
