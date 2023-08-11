@@ -13,36 +13,42 @@ const Experience = () => {
       src: html,
       title: "HTML",
       style: "shadow-orange-500",
+      href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
       id: 2,
       src: javascript,
       title: "JavaScript",
       style: "shadow-yellow-500",
+      href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
       id: 3,
       src: css,
       title: "CSS",
       style: "shadow-blue-500",
+      href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
     {
       id: 4,
       src: react,
       title: "REACT",
       style: "shadow-blue-300",
+      href: "https://react.dev/learn",
     },
     {
       id: 5,
       src: github,
-      title: "Dithub",
+      title: "Github",
       style: "shadow-gray-500",
+      href: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub",
     },
     {
       id: 6,
       src: tailwindcss,
       title: "Tailwindcss",
       style: "shadow-blue-600",
+      href: "https://tailwindcss.com/docs/installation",
     },
   ];
   return (
@@ -60,12 +66,14 @@ const Experience = () => {
           </p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 py-8 px-12 items-center sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
+          {techs.map(({ id, src, title, style, href }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <a href={href} alt="" target="_blank" rel="noreferrer">
+                <img src={src} alt="" className="w-20 mx-auto" />
+              </a>
               <p className="mt-4 text-center">{title}</p>
             </div>
           ))}

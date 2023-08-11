@@ -58,7 +58,7 @@ const SocialLinks = () => {
         {links.map(({ id, child, href, dowmload }) => (
           <li
             key={id}
-            className="flex justify-center items-center w-40 h-14 px-2 ml-[-120px] hover:ml-[-10px] hover:rounded-md duration-300 bg-green-400"
+            className="flex justify-center items-center w-40 h-14 px-2 ml-[-120px] hover:ml-[-10px] hover:rounded-md duration-300 bg-blue-500"
           >
             <a
               className="flex justify-center items-center w-full"
