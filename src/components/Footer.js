@@ -60,7 +60,7 @@ const Footer = () => {
           through the following links:
         </p>
       </div>
-      <ul className="flex justify-center items-center">
+      <ul className="flex justify-center flex-wrap items-center">
         {links.map(({ id, child, href, dowmload }) => (
           <li
             key={id}
