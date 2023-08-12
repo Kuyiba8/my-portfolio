@@ -6,12 +6,12 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div name="home" className="h-full pt-20 w-full bg-slate-200 ">
-      <div className="w-full mx-auto flex flex-col items-center justify-evenly h-full px-4 sm:flex-row">
+      <div className="w-full mx-auto flex flex-col items-center justify-evenly h-full px-2 sm:flex-row">
         <div className="flex flex-col justify-center ">
           <h2 className="text-3xl sm:text-5xl font-bold">
             I'm a Full Stack Developer
           </h2>
-          <p className="text-xl py-4 w-96">
+          <p className="text-xl py-4 w-full">
             I have one year of experience building and designing software.
             Currently, i love to work on web applcation using technologies like
             React, Tailwindcss and Next JS.

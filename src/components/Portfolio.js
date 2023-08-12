@@ -52,7 +52,7 @@ const Portfolio = () => {
                 alt=""
               />
               <div className="flex justify-center items-center">
-                <button className="w-1/2 px-2 py-3 m-2 duration-200 hover:scale-105">
+                <button className="w-full px-2 py-3 m-2 duration-200 hover:scale-105">
                   CERTIFICATE
                 </button>
               </div>

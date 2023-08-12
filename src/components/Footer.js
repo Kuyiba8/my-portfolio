@@ -6,7 +6,7 @@ import { BsFillPersonLinesFill, BsFacebook } from "react-icons/bs";
 const Footer = () => {
   const links = [
     {
-      id: 4,
+      id: 1,
       child: (
         <>
           facebook <BsFacebook size={30} />
@@ -15,7 +15,7 @@ const Footer = () => {
       href: "https://web.facebook.com/kuyiba.anthony.5",
     },
     {
-      id: 1,
+      id: 2,
       child: (
         <>
           Linkedin <FaLinkedin size={30} />
@@ -24,7 +24,7 @@ const Footer = () => {
       href: "http://linkedin.com",
     },
     {
-      id: 2,
+      id: 3,
       child: (
         <>
           Github <FaGithub size={30} />
@@ -33,7 +33,7 @@ const Footer = () => {
       href: "http://github.com",
     },
     {
-      id: 3,
+      id: 4,
       child: (
         <>
           Mail <HiOutlineMail size={30} />
@@ -42,7 +42,7 @@ const Footer = () => {
       href: "mailto:tony@gmail.com",
     },
     {
-      id: 4,
+      id: 5,
       child: (
         <>
           Resume <BsFillPersonLinesFill size={30} />

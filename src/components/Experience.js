@@ -56,7 +56,7 @@ const Experience = () => {
       name="experience"
       className="bg-gradient-to-b from-green-300 to-green-900 w-full h-full"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-1 flex justify-center">
             Experience
