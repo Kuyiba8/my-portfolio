@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="h-full pt-20 w-full bg-teal-600 ">
-      <div className="w-screen mx-auto flex flex-col items-center justify-evenly h-full px-4 sm:flex-row">
+    <div name="home" className="h-full pt-20 w-full bg-slate-200 ">
+      <div className="w-full mx-auto flex flex-col items-center justify-evenly h-full px-4 sm:flex-row">
         <div className="flex flex-col justify-center ">
           <h2 className="text-3xl sm:text-5xl font-bold">
             I'm a Full Stack Developer
@@ -21,7 +21,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group p-2 border rounded-2xl bg-green-400 cursor-pointer flex items-center"
+              className="group p-2 w-2/5 border rounded-2xl bg-green-400 cursor-pointer flex items-center"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
