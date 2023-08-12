@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+import Contributers from "./components/Contributers";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Portfolio />
       <Experience />
       <Contact />
+      <Contributers />
       <Footer />
 
       <SocialLinks />
