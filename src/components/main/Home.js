@@ -1,5 +1,5 @@
 import React from "react";
-import tony from "./Images/tony.jpg";
+import tony from "../Images/tony.jpg";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-scroll";
 

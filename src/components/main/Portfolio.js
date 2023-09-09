@@ -1,9 +1,9 @@
 import React from "react";
-import html from "./Sololearn/html.png";
-import css from "./Sololearn/css.png";
-import game from "./Sololearn/JavaScript.jpg";
-import web from "./Sololearn/Web-Design.jpg";
-import marketers from "./Sololearn/coding-marketers.jpg";
+import html from "../Sololearn/html.png";
+import css from "../Sololearn/css.png";
+import game from "../Sololearn/JavaScript.jpg";
+import web from "../Sololearn/Web-Design.jpg";
+import marketers from "../Sololearn/coding-marketers.jpg";
 
 const Portfolio = () => {
   const portfolios = [

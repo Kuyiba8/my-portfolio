@@ -1,10 +1,10 @@
 import React from "react";
-import html from "./web logos/html.png";
-import css from "./web logos/css.png";
-import javascript from "./web logos/javascript.png";
-import react from "./web logos/react.png";
-import github from "./web logos/github.png";
-import tailwindcss from "./web logos/tailwindcss.png";
+import html from "../web logos/html.png";
+import css from "../web logos/css.png";
+import javascript from "../web logos/javascript.png";
+import react from "../web logos/react.png";
+import github from "../web logos/github.png";
+import tailwindcss from "../web logos/tailwindcss.png";
 
 const Experience = () => {
   const techs = [

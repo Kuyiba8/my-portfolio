@@ -1,29 +1,25 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import SocialLinks from "./components/SocialLinks";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
-import Contributers from "./components/Contributers";
+import { useAuth0 } from "@auth0/auth0-react";
+import MainContent from "./components/MainContent";
+import LoginButton from "./components/main/Login";
+import LogoutButton from "./components/main/Logout";
 
-function App() {
-  return (
-    <div className="">
-      <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Contributers />
-      <Footer />
+const Profile = () => {
+  const { isAuthenticated, isLoading } = useAuth0();
 
-      <SocialLinks />
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
+
+  return isAuthenticated ? (
+    <div>
+      <MainContent logoutButton={<LogoutButton />} />
+    </div>
+  ) : (
+    <div>
+      <LoginButton />
     </div>
   );
-}
+};
 
-export default App;
+export default Profile;

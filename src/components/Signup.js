@@ -1,62 +1,92 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import MainContent from "./components/MainContent";
+import LoginButton from "./components/main/Login";
+import LogoutButton from "./components/main/Logout";
 
-const Signup = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const Profile = () => {
+  const { isAuthenticated, isLoading } = useAuth0();
 
-  return (
-    <div className="flex justify-center">
-      <div className="flex border p-2 w-2/5">
-        <form className="">
-          <h2 className="text-center">Signup</h2>
-          <div className="">
-            <label htmlFor="name">Fullname: </label>
-            <br />
-            <input
-              className="border p-2 rounded-2xl border-green-300"
-              type="text"
-              name="name"
-              placeholder="Your Fullname"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div className="">
-            <label htmlFor="email">Email: </label>
-            <br />
-            <input
-              className="border p-2 rounded-2xl border-green-300"
-              type="text"
-              name="email"
-              placeholder="Your Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="m-1">
-            <label htmlFor="password">Password: </label>
-            <br />
-            <input
-              className="border p-2 rounded-2xl border-green-300"
-              type="password"
-              name="password"
-              placeholder="Your Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-          <p>
-            Already have an account. <Link to="/login">Login</Link>
-          </p>
-        </form>
-      </div>
-      <div className="border p-3 w-2/5">
-        <p>my profile picture</p>
-      </div>
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
+
+  return isAuthenticated ? (
+    <div>
+      <MainContent logoutButton={<LogoutButton />} />
+    </div>
+  ) : (
+    <div>
+      <LoginButton />
     </div>
   );
 };
 
-export default Signup;
+export default Profile;
+
+
+
+
+
+
+import React from "react";
+import Navbar from "./Navbar";
+
+const MainContent = ({ logoutButton }) => {
+  return (
+    <div>
+      <Navbar logoutButton={logoutButton} />
+      {/* Your main content here */}
+      <p>Welcome to the main content.</p>
+    </div>
+  );
+};
+
+export default MainContent;
+
+
+
+
+
+
+
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
+
+const Navbar = ({ logoutButton }) => {
+  // ... (your existing Navbar code)
+
+  return (
+    <div className="flex justify-between bg-blue-600 h-20 items-center fixed w-full">
+      {/* ... (your existing Navbar code) */}
+      <ul className="hidden sm:flex">
+        {/* ... (your existing Navbar code) */}
+      </ul>
+      <div
+        onClick={() => setNav(!nav)}
+        className="cursor-pointer pr-4 z-10 sm:hidden"
+      >
+        {/* ... (your existing Navbar code) */}
+      </div>
+      {nav && (
+        <ul className="flex flex-col justify-center bg-blue-600 items-center absolute top-0 left-0 w-full h-screen">
+          {/* ... (your existing Navbar code) */}
+          <li
+            className="px-2 py-2 cursor-pointer duration-100 hover:scale-105 capitalize"
+            key={6}
+          >
+            {logoutButton}
+          </li>
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default Navbar;
+
+
+
+
+
